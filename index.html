@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .bubble {
+            cursor: pointer;
+            text-align: center;
+            margin: 5px;
+            height: 44px;
+            width: 44px;
+            border-radius: 50%;
+            background: rgb(25, 58, 25);
+            color: #fff;
+            display: inline-block;
+        }
+
+        #timers {
+            background-color: #fff;
+            color: green;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #round {
+            position: relative;
+            top: .8rem;
+            font-size: 1.2rem;
+        }
+
+        #parents {
+            background-color: rgb(97, 172, 97);
+            height: 100vh;
+        }
+
+        .second-core {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            width: 80%;
+            margin:0 auto;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parents">
+        <div class="second-core" >
+            <div style="background-color: green; color: #fff; display: flex; margin-top: 2rem; justify-content: space-around; font-size: 2rem ; font-weight: 300;">
+                <div>Hit <span id="gethit" style="background-color: #fff;color: green;">0</span></div>
+                <div>Timer <span id="timers">60</span></div>
+                <div>Score <span id="score" style="background-color: #fff;color: green;">0</span></div>
+            </div>
+            <div style="background-color: #ffff;  padding:1rem;"  id="pbbul">
+                <!-- <div class="bubble"><span  id="round">2</span></div>
+            <div class="bubble"><span  id="round">2</span></div>
+            <div class="bubble"><span  id="round">2</span></div>
+            <div class="bubble"><span  id="round">2</span></div> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
